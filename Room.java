@@ -62,7 +62,7 @@ public class Room
         String listExits = listExits();
 
         String roomString = this.name + ": " + this.description;
-        roomString = roomString.replaceAll(".{89}", "$0\n");
+        //roomString = roomString.replaceAll(".{89}", "$0\n");
         roomString += "\n\nExits:\n" + listExits;
 
         return roomString;
