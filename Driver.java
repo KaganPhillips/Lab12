@@ -75,9 +75,9 @@ public class Driver {
             
             //System.out.println(mainMap.getRoom("Guest room").toString());
             System.out.println("\n" + mainMap.getRoom(userInput).toString());
-            System.out.println("Please choose an exit");
             
             while (!validInput) {
+                System.out.println("Please choose an exit");
                 userInput = scnr.nextLine();
                 for (int i = 0; i < 7; i++) {
                     if (userInput.equalsIgnoreCase(roomNames[i]) || userInput.equalsIgnoreCase("exit")) {
