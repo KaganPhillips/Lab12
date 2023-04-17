@@ -6,6 +6,7 @@ public class Driver {
         Scanner scnr = new Scanner(System.in);
         AdventureMap mainMap = new AdventureMap();
 
+        //log room names for easy compare
         String[] roomNames = new String[7];
         roomNames[0] = "Guest Room";
         roomNames[1] = "Library";
@@ -73,7 +74,6 @@ public class Driver {
         do {
             validInput = false;
             
-            //System.out.println(mainMap.getRoom("Guest room").toString());
             System.out.println("\n" + mainMap.getRoom(userInput).toString());
             
             while (!validInput) {
