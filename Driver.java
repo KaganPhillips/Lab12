@@ -78,7 +78,7 @@ public class Driver {
             System.out.println("Please choose an exit");
             
             while (!validInput) {
-                userInput = scnr.next();
+                userInput = scnr.nextLine();
                 for (int i = 0; i < 7; i++) {
                     if (userInput.equalsIgnoreCase(roomNames[i]) || userInput.equalsIgnoreCase("exit")) {
                         validInput = true;
